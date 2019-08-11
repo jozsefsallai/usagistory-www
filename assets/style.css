@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font: 18px / 1.7 'Courier New', monospace;
+  background: #000 url('images/background_top.png');
+  background-repeat: repeat-x;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+a:hover {
+  border-bottom: 1px dashed #fff;
+}
+
+@keyframes cloud-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    transform: translate3d(-600px, 0, 0);
+  }
+}
+
+@-webkit-keyframes cloud-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    transform: translate3d(-600px, 0, 0);
+  }
+}
+
+.scrolling-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.moon {
+  position: absolute;
+  top: 40px;
+  right: 20%;
+  background: url('images/moon.png') no-repeat;
+  background-size: 63px 63px;
+  width: 63px;
+  height: 63px;
+}
+
+.cloud {
+  position: absolute;
+  left: 0;
+  right: 0;
+  line-height: 0;
+  width: 400%;
+}
+
+.cloud.cloud-1 {
+  bottom: 0;
+  height: 120px;
+  background: url('images/cloud1.gif');
+  animation: cloud-scroll 1s linear infinite;
+}
+
+.cloud.cloud-2 {
+  bottom: 120px;
+  height: 56px;
+  background: url('images/cloud2.gif');
+  animation: cloud-scroll 2s linear infinite;
+}
+
+.cloud.cloud-3 {
+  bottom: 176px;
+  height: 43px;
+  background: url('images/cloud3.gif');
+  animation: cloud-scroll 4s linear infinite;
+}
+
+.cloud.cloud-4 {
+  bottom: 219px;
+  height: 65px;
+  background: url('images/cloud4.gif');
+  animation: cloud-scroll 6s linear infinite;
+}
+
+.page {
+  position: relative;
+  z-index: 1000;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  border-bottom: 0;
+}
+
+.logo:hover {
+  border-bottom: 0;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.download-link {
+  margin-top: 35px;
+}
+
+.download-link a {
+  font-size: 36px;
+  font-weight: 600;
+  border-bottom: 0;
+  display: inline-block;
+  margin-left: -42px;
+}
+
+.download-link a .usagi-walk {
+  background: url('images/usagi_walk.gif') no-repeat;
+  width: 26px;
+  height: 36px;
+  background-size: 26px 36px;
+  opacity: 0;
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.download-link a:hover .usagi-walk {
+  opacity: 1;
+}
+
+.download-link a .download-text {
+  border-bottom: 1px solid #fff;
+}
+
+.download-link a:hover .download-text {
+  border-bottom: 1px dashed #fff;
+}
+
+.forum-post {
+  font-size: 13px;
+}
+
+.copyright {
+  margin-top: 50px;
+  color: #dedede;
+  font-size: 13px;
+}
+
+@media only screen and ( max-width: 800px ) {
+  .page {
+    width: auto;
+    padding: 20px;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+
+  .download-link a {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .download-link a .usagi-walk {
+    display: none;
+  }
+}
