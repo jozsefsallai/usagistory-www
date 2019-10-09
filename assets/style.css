@@ -19,7 +19,7 @@ a:hover {
   0% {
     transform: translate3d(0, 0, 0);
   }
-  
+
   100% {
     transform: translate3d(-600px, 0, 0);
   }
@@ -29,7 +29,7 @@ a:hover {
   0% {
     transform: translate3d(0, 0, 0);
   }
-  
+
   100% {
     transform: translate3d(-600px, 0, 0);
   }
@@ -148,8 +148,52 @@ a:hover {
   border-bottom: 1px dashed #fff;
 }
 
-.forum-post {
+.links {
   font-size: 13px;
+}
+
+.changelog-page {
+  font-size: 16px;
+}
+
+.changelog-page .content {
+  text-align: left;
+  background: rgba(0, 0, 0, .4);
+  padding: 15px 20px;
+}
+
+.changelog-page .content .release {
+  border-bottom: 1px solid #aaa;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.changelog-page .content .release:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.changelog-page .content .release .title {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+}
+
+.changelog-page .content .release .date {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.changelog-page .content .release .changes {
+  margin-bottom: 10px;
+}
+
+.changelog-page .content .release .changes ul {
+  margin: 0;
+}
+
+.changelog-page .content .release .download {
+  font-size: 20px;
 }
 
 .copyright {
@@ -175,5 +219,13 @@ a:hover {
 
   .download-link a .usagi-walk {
     display: none;
+  }
+
+  .changelog-page {
+    font-size: 14px;
+  }
+
+  .changelog-page .content .release .title {
+    font-size: 22px;
   }
 }
